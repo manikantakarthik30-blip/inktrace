@@ -17,13 +17,16 @@ Treat the score as **evidence, not proof**.
 git clone https://github.com/manikantakarthik30-blip/inktrace.git
 cd inktrace
 npm install
+cp .env.example .env
 ```
 
-Create a `.env` file (not committed):
+Open `.env` and paste your key:
 
 ```
-XAI_API_KEY=your_xai_api_key
+XAI_API_KEY=xai-your-real-key
 ```
+
+Get a key from [console.x.ai](https://console.x.ai). Never commit `.env`.
 
 Then:
 
@@ -38,8 +41,6 @@ Open the URL Vite prints. Use **Sample AI** / **Sample human**, or paste your ow
 | Variable | Where | Purpose |
 |---|---|---|
 | `XAI_API_KEY` | server only | xAI chat completions. Never expose this to the browser. |
-
-Get a key from [console.x.ai](https://console.x.ai).
 
 ## License
 
